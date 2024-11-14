@@ -3,7 +3,7 @@ import { useState } from 'react';
 export default function UseStateBody() {
   const [count, setCount] = useState(10);
   return (
-    <>
+    <div className='w-full flex flex-col tiny:flex-row items-center justify-center gap-3 flex-wrap'>
       <button
         onClick={() => setCount(prev => prev - 1)}
         type="button"
@@ -21,6 +21,6 @@ export default function UseStateBody() {
       >
         Increment
       </button>
-    </>
+    </div>
   );
 }

@@ -61,7 +61,7 @@ export default function UseEffectBody() {
             </button>
           </li>
         </ul>
-        <div className="overflow-y-scroll h-64 w-[22rem] px-6 py-4 bg-gray-200 text-medium text-gray-500 rounded-lg">
+        <div className="overflow-y-scroll h-64 w-full max-w-[22rem] px-6 py-4 bg-gray-200 text-medium text-gray-500 rounded-lg">
           <h3 className="text-lg font-bold text-gray-900 mb-2">{route}</h3>
           {(data.length > 0 &&
             data.map((item, index) => (
